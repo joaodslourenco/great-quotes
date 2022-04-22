@@ -1,3 +1,4 @@
+import { Redirect } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import { Switch } from 'react-router-dom'
 import AllQuotes from './pages/AllQuotes'
@@ -8,6 +9,9 @@ function App() {
   return (
     <div>
       <Switch>
+        {/* <Route path="/">
+          <Redirect to="/quotes" />
+        </Route> */}
         <Route exact path="/quotes">
           <AllQuotes />
         </Route>
